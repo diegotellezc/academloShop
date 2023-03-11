@@ -292,3 +292,112 @@ button {
 .show-menu {
     left: 0;
 }
+
+/* Products */
+.products__title {
+    margin-bottom: var(--sp-2);
+}
+
+.product {
+    overflow: hidden;
+}
+
+.product__image {
+    padding: var(--sp-1);
+    background-color: var(--card-color);
+}
+
+.product__image img {
+    transition: transform .3s ease-in-out;
+}
+
+.product:hover img {
+    transform: translateY(-10px);
+}
+
+.product__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: var(--sp-1-5);
+    min-height: 109px;
+}
+
+.product__btn {
+    position: absolute;
+    top: 0;
+    right: var(--sp-1-5);
+    width: 45px;
+    height: 45px;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.product__btn:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.product__price {
+    grid-column: span 1;
+}
+
+.product__stock {
+    grid-column: span 2;
+    justify-self: flex-end;
+}
+
+.product__title {
+    grid-column: span 3;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--card-color);
+}
+
+.footer__container, .footer__top {
+    display: grid;
+    row-gap: var(--sp-1-5);
+}
+
+.footer__title {
+    margin-bottom: var(--sp-0-75);
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-1-5);
+}
+
+.footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--sp-2-5);
+    height: var(--sp-2-5);
+    color: var(--bg-color);
+    background-color: var(--title-color);
+    border-radius: 50%;
+    font-size: var(--sp-1-5);
+    transition: background-color .3s ease-in-out;
+}
+
+.footer__link:hover {
+    background-color: var(--primary-color);
+}
+
+.footer__bottom {
+    text-align: center;
+}
