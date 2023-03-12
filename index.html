@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <h1>Carrito de compras</h1>
 
     <!-- Loader -->
     <div class="loader loader--hidden">
@@ -82,7 +81,42 @@
         </section>
     </main>
 
-    <!-- Main -->
+    <!-- Cart -->
+    <div class="cart">
+        <div class="cart__container">
+            <div class="cart__header">
+                <h3 class="cart__title">Carrito de Compras</h3>
+                <button type="button" class="cart__btn btn--close">
+                    <i class="bx bx-x"></i>
+                </button>
+            </div>
+
+            <div class="cart__body">
+                <div class="cart__empty">
+                    <i class="bx bx-cart"></i>
+                    <p class="cart__empty--text">No hay productos en el carrito</p>
+                </div>
+            </div>
+
+            <div class="cart__footer">
+
+                <div class="cart__count">
+                    <span class="cart__count--text">Articulos</span>
+                    <span class="cart__count--item">0</span>
+                </div>
+
+                <div class="cart__total">
+                    <span class="cart__total--text">Total</span>
+                    <span class="cart__total--item">$0</span>
+                </div>
+
+                <button type="button" class="cart__btn btn--buy">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
     <footer class="footer section">
         <div class="footer__container container">
             <div class="footer__top">
