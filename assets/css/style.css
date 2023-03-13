@@ -315,9 +315,13 @@ button {
 .product__image img {
     transition: transform .3s ease-in-out;
 }
-
+.product__image:hover {
+    background: rgb(63,94,251);
+background: linear-gradient(90deg, rgba(63,94,251,0.1) 29%, rgba(253, 5, 5, 0.1) 69%);
+}
 .product:hover img {
     transform: translateY(-10px);
+    
 }
 
 .product__content {

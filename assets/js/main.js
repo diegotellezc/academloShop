@@ -3,15 +3,19 @@ import showMenu from "./components/showMenu.js";
 import showCart from "./components/showCart.js";
 import products from "./components/product.js";
 import getProducts from "./helpers/getProducts.js";
+import cart from "./components/cart.js";
 
 // Ocultar loader
 loader()
 
-// Show Menu
+// Mostrar Menu
 showMenu()
 
-// Show Cart
+// Mostrar carrito
 showCart()
 
 // Products
-products(await getProducts())
+const { db, printProducts } = products(await getProducts())
+
+// Carrito
+cart(db, printProducts)
