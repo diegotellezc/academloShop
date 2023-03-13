@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras</title>
+    <title>Academlo Store</title>
+    <link rel="icon" href="./assets/icons/aca_logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Sans:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -40,11 +41,11 @@
                         <a href="#" class="nav__link">Inicio</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__link">Productos</a>
+                        <a href="#products__section" class="nav__link">Productos</a>
                     </li>
 
                     <li class="nav__items">
-                        <a href="#" class="nav__link">Nosotros</a>
+                        <a href="#footer__section" class="nav__link">Nosotros</a>
                     </li>
                 </ul>
             </div>
@@ -66,10 +67,10 @@
 
     <!-- Main -->
     <main class="main">
-        <section class="products section">
+        <section class="products section" id="products__section">
             <h2 class="products__title section--title">Productos</h2>
             <div class="products__container container">
-                <article class="product">
+                <!-- <article class="product">
                     <div class="product__image">
                         <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
                     </div>
@@ -81,119 +82,7 @@
                         <span class="product__stock">Disponibles: 3</span>
                         <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
                     </div>
-                </article>
-
-                <article class="product">
-                    <div class="product__image">
-                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
-                    </div>
-                    <div class="product__content">
-                        <button type="button" class="product__btn add--to--cart">
-                            <i class="bx bx-cart-add"></i>
-                        </button>
-                        <span class="product__price">$10</span>
-                        <span class="product__stock">Disponibles: 3</span>
-                        <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <div class="product__image">
-                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
-                    </div>
-                    <div class="product__content">
-                        <button type="button" class="product__btn add--to--cart">
-                            <i class="bx bx-cart-add"></i>
-                        </button>
-                        <span class="product__price">$10</span>
-                        <span class="product__stock">Disponibles: 3</span>
-                        <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <div class="product__image">
-                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
-                    </div>
-                    <div class="product__content">
-                        <button type="button" class="product__btn add--to--cart">
-                            <i class="bx bx-cart-add"></i>
-                        </button>
-                        <span class="product__price">$10</span>
-                        <span class="product__stock">Disponibles: 3</span>
-                        <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <div class="product__image">
-                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
-                    </div>
-                    <div class="product__content">
-                        <button type="button" class="product__btn add--to--cart">
-                            <i class="bx bx-cart-add"></i>
-                        </button>
-                        <span class="product__price">$10</span>
-                        <span class="product__stock">Disponibles: 3</span>
-                        <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <div class="product__image">
-                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
-                    </div>
-                    <div class="product__content">
-                        <button type="button" class="product__btn add--to--cart">
-                            <i class="bx bx-cart-add"></i>
-                        </button>
-                        <span class="product__price">$10</span>
-                        <span class="product__stock">Disponibles: 3</span>
-                        <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <div class="product__image">
-                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
-                    </div>
-                    <div class="product__content">
-                        <button type="button" class="product__btn add--to--cart">
-                            <i class="bx bx-cart-add"></i>
-                        </button>
-                        <span class="product__price">$10</span>
-                        <span class="product__stock">Disponibles: 3</span>
-                        <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <div class="product__image">
-                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
-                    </div>
-                    <div class="product__content">
-                        <button type="button" class="product__btn add--to--cart">
-                            <i class="bx bx-cart-add"></i>
-                        </button>
-                        <span class="product__price">$10</span>
-                        <span class="product__stock">Disponibles: 3</span>
-                        <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <div class="product__image">
-                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
-                    </div>
-                    <div class="product__content">
-                        <button type="button" class="product__btn add--to--cart">
-                            <i class="bx bx-cart-add"></i>
-                        </button>
-                        <span class="product__price">$10</span>
-                        <span class="product__stock">Disponibles: 3</span>
-                        <h3 class="product__title">Camiseta de manga corta con cuello redondo</h3>
-                    </div>
-                </article>
+                </article> -->
             </div>
         </section>
     </main>
@@ -214,7 +103,7 @@
                     <p class="cart__empty--text">No hay productos en el carrito</p>
                 </div> -->
 
-                <article class="article">
+                <!-- <article class="article">
 
                     <div class="article__image">
                         <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Product 1">
@@ -240,7 +129,7 @@
                             <i class="bx bx-trash"></i>
                         </button>
                     </div>
-                </article>
+                </article> -->
             </div>
 
             <div class="cart__footer">
@@ -263,7 +152,7 @@
 
     <!-- Footer -->
     <footer class="footer section">
-        <div class="footer__container container">
+        <div class="footer__container container" id="footer__section">
             <div class="footer__top">
 
                 <div class="footer__left">
@@ -275,17 +164,17 @@
                     <h3 class="footer__title">Redes Sociales</h3>
                     <ul class="footer__social">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">
+                            <a href="https://github.com/diegotellezc/academloShop" target="_blank" class="footer__link">
                                 <i class="bx bxl-github"></i>
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">
+                            <a href="https://www.instagram.com/academlohq/" target="_blank" class="footer__link">
                                 <i class="bx bxl-instagram"></i>
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">
+                            <a href="https://www.linkedin.com/school/academlo/" target="_blank" class="footer__link">
                                 <i class="bx bxl-linkedin"></i>
                             </a>
                         </li>
@@ -293,7 +182,7 @@
                 </div>
 
                 <div class="footer__bottom">
-                    <p class="footer__text">Todos los derechos reservados</p>
+                    <p class="footer__text">© Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
