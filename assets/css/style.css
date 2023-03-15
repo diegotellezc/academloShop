@@ -753,6 +753,10 @@ button {
         bottom: 40px;
         right: 40px;
     }
+
+    .btn--cart {
+        margin-right: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -765,5 +769,6 @@ button {
         grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     }
 
+    
     
 }

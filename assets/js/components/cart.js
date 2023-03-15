@@ -9,7 +9,6 @@ function cart (db, printProducts) {
     const totalDOM = document.querySelector(".cart__total--item")
     const checkoutDOM = document.querySelector(".btn--buy")
 
-
     // Funciones
     function printCart(){
         let htmlCart = ""
