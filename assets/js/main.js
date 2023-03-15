@@ -5,6 +5,7 @@ import products from "./components/product.js";
 import getProducts from "./helpers/getProducts.js";
 import cart from "./components/cart.js";
 import contactButton from "./components/app.js";
+import dataForm from "./components/dataForm.js";
 
 // Ocultar loader
 loader()
@@ -23,3 +24,6 @@ cart(db, printProducts)
 
 // Boton de Contacto
 contactButton()
+
+// dataForm al correo
+dataForm()
