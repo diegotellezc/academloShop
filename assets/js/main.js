@@ -6,6 +6,7 @@ import getProducts from "./helpers/getProducts.js";
 import cart from "./components/cart.js";
 import contactButton from "./components/app.js";
 import dataForm from "./components/dataForm.js";
+import modalMembers from "./components/modalMembers.js";
 
 // Ocultar loader
 loader()
@@ -27,3 +28,6 @@ contactButton()
 
 // dataForm al correo
 dataForm()
+
+// Modal Integrantes
+modalMembers()
