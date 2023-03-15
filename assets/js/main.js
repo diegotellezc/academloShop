@@ -4,6 +4,7 @@ import showCart from "./components/showCart.js";
 import products from "./components/product.js";
 import getProducts from "./helpers/getProducts.js";
 import cart from "./components/cart.js";
+import contactButton from "./components/app.js";
 
 // Ocultar loader
 loader()
@@ -19,3 +20,6 @@ const { db, printProducts } = products(await getProducts())
 
 // Carrito
 cart(db, printProducts)
+
+// Boton de Contacto
+contactButton()
