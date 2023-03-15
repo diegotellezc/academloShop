@@ -137,6 +137,16 @@ function cart (db, printProducts) {
         if(e.target.closest(".add--to--cart")) {
             const id = +e.target.closest(".add--to--cart").dataset.id
             addToCart(id)
+            
+            for(const item of cart) {
+                const productFound = db.find(p => p.id == item.id)
+                console.log("Producto encontrado: ", productFound)
+
+                if(productFound.quantity < item.qty){
+                    alert(`Lo sentimos. Sólo tenemos ${productFound.quantity} productos disponibles en este estilo. No puedes agregar más veces este articulo.`)
+                    removeFromCart(id)
+                }
+            }
         }
     })
     
@@ -150,6 +160,17 @@ function cart (db, printProducts) {
         if(e.target.closest(".article--plus")) {
             const id = +e.target.closest(".article--plus").dataset.id
             addToCart(id)
+
+            for(const item of cart) {
+                const productFound = db.find(p => p.id == item.id)
+                console.log("Producto encontrado: ", productFound)
+
+                if(productFound.quantity < item.qty){
+                    alert(`Lo sentimos. Sólo tenemos ${productFound.quantity} productos disponibles en este estilo. No puedes agregar más veces este articulo.`)
+                    removeFromCart(id)
+                }
+            }
+
         }
 
         if(e.target.closest(".remove-from-cart")) {
