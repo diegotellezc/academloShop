@@ -753,16 +753,24 @@ button {
 /* Footer */
 .footer {
     background-color: var(--card-color);
+    width: 100%;
 }
 
 .footer__container, .footer__top {
-    display: grid;
-    row-gap: var(--sp-2);
+    width: 100%;
+    margin: 0;
+}
+
+.footer__description {
+    padding: 2rem;
 }
 
 .footer__boxes {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem 0;
 }
 
 .box1, .box2, .box3 {
@@ -834,7 +842,7 @@ button {
 
 .footer__bottom {
     text-align: center;
-    margin: 12px;
+    margin: 36px 12px 0;
 }
 
 /* Media Queries */
@@ -882,6 +890,12 @@ button {
 
     .modal__container {
         max-width: 800px;
+    }
+
+    .footer__boxes {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
