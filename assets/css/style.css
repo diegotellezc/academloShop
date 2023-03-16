@@ -787,6 +787,36 @@ button {
     transition: var(--transition);
 }
 
+.modal--show--thanks {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+}
+
+.modal--show--thanks:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+
+.modal__close__thanks {
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    padding: .6em 1.8em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+    font-size: inherit;
+}
+
+.modal__close__thanks:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+
 /* Modal Members */
 .modal__members {
     position: fixed;
@@ -809,6 +839,7 @@ button {
     transition: opacity .6s;
     --transform: translateY(0);
 }
+
 
 .modal__container {
     margin: auto;

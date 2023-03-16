@@ -27,11 +27,9 @@ contactForm.addEventListener('submit', function (e) {
 })
     .then(response => response.json())
     .then(data => {
-      console.log(data)
       modalThanks.classList.add("modal--show")
     })
     .catch(error => {
-      console.log(error)
       window.alert('Algo salio mal, intentalo más tarde')
     })
 

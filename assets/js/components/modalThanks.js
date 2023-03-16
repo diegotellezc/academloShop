@@ -1,22 +1,17 @@
 function modalThanks() {
-    const btnContactar = document.querySelector(".btn__submit")
     const modalThanks = document.querySelector(".modal__thanks")
-    const btnModalClose = document.querySelectorAll(".modal__close")
-    // const btnPayment = document.querySelectorAll(".footer__payments")
+    const modalMembers = document.querySelector(".modal__members")
+    const btnModalCloseThanks = document.querySelector(".modal__close__thanks")
+    const formContainer = document.querySelector(".form__container")
 
-    btnContactar.addEventListener("click", function (e) {
+
+    btnModalCloseThanks.addEventListener("click", function (e) {
+        console.log("Esta funcionando el evento de click")
         e.preventDefault()
-        modalThanks.classList.add("modal--show")
+        modalThanks.classList.remove("modal--show")
+        formContainer.classList.remove("active")
     })
 
-    btnModalClose.addEventListener("click", function (e) {
-        e.preventDefault()
-        btnModalClose.classList.remove("modal--show")
-    })
-
-    // btnPayment.addEventListener('click', function(event) {
-    //     event.preventDefault();
-    // });
 }
 
 export default modalThanks
