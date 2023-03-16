@@ -7,6 +7,7 @@
     --title-color: hsl(0, 0%, 10%);
     --bg-color: hsl(0, 0%, 100%);
     --card-color: hsl(0, 0%, 90%);
+    --green-icon-color: #9acd32;
 
     --body-font: "Open Sans", sans-serif;
     --title-font: "Poppins", sans-serif;
@@ -134,6 +135,7 @@ button {
     max-width: 1024px;
     margin: 0 1rem;
 }
+
 
 /* Loader */
 .loader {
@@ -754,9 +756,8 @@ button {
     border-bottom: 2px solid var(--primary-color);
 } */
 
-
-/* Modal Thanks */
-.modal__thanks {
+/* Modal Global */
+.modal__global {
     position: fixed;
     top: 0;
     left: 0;
@@ -771,6 +772,71 @@ button {
     --transition: transform .8s;
 }
 
+.modal__close__global {
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    padding: .6em 1.8em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+    font-size: inherit;
+}
+
+.modal__close__global:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+
+.modal__title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal__paragraph {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: var(--normal-font);
+}
+
+.modal__img {
+    width: 70%;
+    max-width: 300px;
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+}
+
+/* Modal Checkout */
+.modal__container__checkout {
+    margin: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: var(--bg-color);
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal__icon {
+    font-size: 4rem;
+    color: var(--green-icon-color);
+}
+
+/* Modal Thanks for contacting */
 .modal__container__thanks {
     margin: auto;
     width: 90%;
@@ -787,59 +853,11 @@ button {
     transition: var(--transition);
 }
 
-.modal--show--thanks {
-    opacity: 1;
-    pointer-events: unset;
-    transition: opacity .6s;
-    --transform: translateY(0);
-}
-
-.modal--show--thanks:hover {
-    color: var(--primary-color);
-    background-color: var(--bg-color);
-}
-
-.modal__close__thanks {
-    text-decoration: none;
-    color: var(--bg-color);
-    background-color: var(--primary-color);
-    padding: .6em 1.8em;
-    border: 1px solid;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: 300;
-    transition: background-color .3s;
-    font-size: inherit;
-}
-
-.modal__close__thanks:hover {
-    color: var(--primary-color);
-    background-color: var(--bg-color);
+.modal__paragraph__m1 {
+    display: none;
 }
 
 /* Modal Members */
-.modal__members {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #111111bd;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .6s;
-    --transform: translateY(-100vh);
-    --transition: transform .8s;
-}
-
-.modal--show {
-    opacity: 1;
-    pointer-events: unset;
-    transition: opacity .6s;
-    --transform: translateY(0);
-}
-
 
 .modal__container {
     margin: auto;
@@ -857,39 +875,7 @@ button {
     transition: var(--transition);
 }
 
-.modal__title {
-    font-size: 1.5rem;
-    text-align: center;
-}
 
-.modal__paragraph {
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: var(--small-font);
-}
-
-.modal__img {
-    width: 70%;
-    max-width: 300px;
-}
-
-.modal__close {
-    text-decoration: none;
-    color: var(--bg-color);
-    background-color: var(--primary-color);
-    padding: .6em 1.8em;
-    border: 1px solid;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: 300;
-    transition: background-color .3s;
-    font-size: inherit;
-}
-
-.modal__close:hover {
-    color: var(--primary-color);
-    background-color: var(--bg-color);
-}
 
 
 
@@ -1030,10 +1016,18 @@ button {
         margin-bottom: 10px;
         text-align: center;
     }
+
+    .modal__paragraph__m1 {
+        display: block;
+    }
     
     .modal__img {
         width: 90%;
         max-width: 300px;
+    }
+
+    .modal__container {
+        max-width: 800px;
     }
     /* .main {
         padding-top: var(--header-height);
@@ -1054,10 +1048,6 @@ button {
 
     .btn--cart {
         margin-right: 20px;
-    }
-
-    .modal__container {
-        max-width: 800px;
     }
 
     .footer__boxes {

@@ -9,6 +9,10 @@ function cart (db, printProducts) {
     const totalDOM = document.querySelector(".cart__total--item")
     const checkoutDOM = document.querySelector(".btn--buy")
 
+    const modalCheckout = document.querySelector(".modal__checkout")
+    const cartSection = document.querySelector(".cart")
+    
+
     // Funciones
     function printCart(){
         let htmlCart = ""
@@ -126,10 +130,14 @@ function cart (db, printProducts) {
         cart = []
         printCart()
         printProducts()
-        alert("Gracias por tu compra")
+        modalCheckout.classList.add("modal--show")
+        cartSection.classList.remove("show--cart")
     }
 
     printCart()
+
+
+
 
     // Eventos
 
@@ -140,7 +148,6 @@ function cart (db, printProducts) {
             
             for(const item of cart) {
                 const productFound = db.find(p => p.id == item.id)
-                console.log("Producto encontrado: ", productFound)
 
                 if(productFound.quantity < item.qty){
                     alert(`Lo sentimos. Sólo tenemos ${productFound.quantity} productos disponibles en este estilo. No puedes agregar más veces este articulo.`)

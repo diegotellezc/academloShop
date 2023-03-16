@@ -10,6 +10,7 @@ import modalMembers from "./components/modalMembers.js";
 import darkMode from "./components/darkMode.js";
 import slider from "./components/slider.js";
 import modalThanks from "./components/modalThanks.js";
+import modalCheckout from "./components/modalCheckout.js";
 
 // Ocultar loader
 loader()
@@ -37,6 +38,9 @@ modalMembers()
 
 // Modal Thanks
 modalThanks()
+
+// Modal Checkout
+modalCheckout()
 
 // Modo dark
 darkMode()
