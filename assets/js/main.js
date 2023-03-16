@@ -9,6 +9,7 @@ import dataForm from "./components/dataForm.js";
 import modalMembers from "./components/modalMembers.js";
 import darkMode from "./components/darkMode.js";
 import slider from "./components/slider.js";
+import modalThanks from "./components/modalThanks.js";
 
 // Ocultar loader
 loader()
@@ -33,6 +34,9 @@ dataForm()
 
 // Modal Integrantes
 modalMembers()
+
+// Modal Thanks
+modalThanks()
 
 // Modo dark
 darkMode()

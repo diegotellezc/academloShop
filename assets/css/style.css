@@ -598,8 +598,9 @@ button {
     padding: var(--sp-1);
 }
 
-/*contact button*/
 
+
+/*contact button*/
 .contact__button {
     height: 50px;
     width: 50px;
@@ -754,7 +755,37 @@ button {
 } */
 
 
+/* Modal Thanks */
+.modal__thanks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
 
+.modal__container__thanks {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
 
 /* Modal Members */
 .modal__members {
@@ -778,6 +809,7 @@ button {
     transition: opacity .6s;
     --transform: translateY(0);
 }
+
 .modal__container {
     margin: auto;
     width: 90%;
@@ -785,7 +817,7 @@ button {
     max-height: 90%;
     background-color: var(--bg-color);
     border-radius: 6px;
-    padding: 3em 2.5em;
+    padding: 2em 2.5em;
     display: grid;
     gap: 1em;
     place-items: center;
@@ -795,17 +827,18 @@ button {
 }
 
 .modal__title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .modal__paragraph {
     margin-bottom: 10px;
     text-align: center;
+    font-size: var(--small-font);
 }
 
 .modal__img {
-    width: 90%;
+    width: 70%;
     max-width: 300px;
 }
 
@@ -813,7 +846,7 @@ button {
     text-decoration: none;
     color: var(--bg-color);
     background-color: var(--primary-color);
-    padding: 1em 3em;
+    padding: .6em 1.8em;
     border: 1px solid;
     border-radius: 6px;
     display: inline-block;
@@ -826,7 +859,6 @@ button {
     color: var(--primary-color);
     background-color: var(--bg-color);
 }
-
 
 
 
@@ -958,6 +990,20 @@ button {
         margin-top: var(--header-height);
     }
 
+    .modal__title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .modal__paragraph {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .modal__img {
+        width: 90%;
+        max-width: 300px;
+    }
     /* .main {
         padding-top: var(--header-height);
     } */

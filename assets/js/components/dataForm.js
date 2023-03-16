@@ -2,6 +2,7 @@ function dataForm() {
 
 const contactForm = document.querySelector('.form')
 const btnSubmit = document.querySelector('.btn--submit')
+const modalThanks = document.querySelector(".modal__thanks")
 
 
 contactForm.addEventListener('submit', function (e) {
@@ -27,7 +28,7 @@ contactForm.addEventListener('submit', function (e) {
     .then(response => response.json())
     .then(data => {
       console.log(data)
-      window.alert('Tu mensaje se envió correctamente')
+      modalThanks.classList.add("modal--show")
     })
     .catch(error => {
       console.log(error)
