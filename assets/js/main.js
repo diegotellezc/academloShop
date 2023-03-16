@@ -6,7 +6,6 @@ import getProducts from "./helpers/getProducts.js";
 import cart from "./components/cart.js";
 import contactButton from "./components/app.js";
 import dataForm from "./components/dataForm.js";
-import darkMode from "./components/darkMode.js";
 import modalMembers from "./components/modalMembers.js";
 
 // Ocultar loader
@@ -29,9 +28,6 @@ contactButton()
 
 // dataForm al correo
 dataForm()
-
-// Dark Mode
-darkMode()
 
 // Modal Integrantes
 modalMembers()
