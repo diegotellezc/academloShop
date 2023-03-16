@@ -7,6 +7,7 @@ import cart from "./components/cart.js";
 import contactButton from "./components/app.js";
 import dataForm from "./components/dataForm.js";
 import modalMembers from "./components/modalMembers.js";
+import slider from "./components/slider.js";
 
 // Ocultar loader
 loader()
@@ -16,6 +17,9 @@ showMenu()
 
 // Mostrar carrito
 showCart()
+
+// Slider
+slider()
 
 // Products
 const { db, printProducts } = products(await getProducts())
@@ -31,3 +35,4 @@ dataForm()
 
 // Modal Integrantes
 modalMembers()
+
