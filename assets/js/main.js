@@ -6,7 +6,6 @@ import getProducts from "./helpers/getProducts.js";
 import cart from "./components/cart.js";
 import contactButton from "./components/app.js";
 import dataForm from "./components/dataForm.js";
-// import slider from "./components/slider.js";
 import darkMode from "./components/darkMode.js";
 import modalMembers from "./components/modalMembers.js";
 
@@ -18,9 +17,6 @@ showMenu()
 
 // Mostrar carrito
 showCart()
-
-// Slider
-// slider()
 
 // Products
 const { db, printProducts } = products(await getProducts())
