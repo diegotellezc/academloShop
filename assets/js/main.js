@@ -8,6 +8,7 @@ import contactButton from "./components/app.js";
 import dataForm from "./components/dataForm.js";
 import modalMembers from "./components/modalMembers.js";
 import darkMode from "./components/darkMode.js";
+import slider from "./components/slider.js";
 
 // Ocultar loader
 loader()
@@ -35,3 +36,6 @@ modalMembers()
 
 // Modo dark
 darkMode()
+
+// Slider
+slider()
