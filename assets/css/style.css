@@ -909,6 +909,7 @@ button {
 .footer {
     background-color: var(--card-color);
     width: 100%;
+    padding-bottom: calc(var(--header-height) + 1rem);
 }
 
 .footer__container, .footer__top {
@@ -1074,6 +1075,10 @@ button {
 
     .btn--cart {
         margin-right: 20px;
+    }
+
+    .footer {
+        padding-bottom: 1.5rem;
     }
 
     .footer__boxes {
