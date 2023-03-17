@@ -1,5 +1,5 @@
 function cart (db, printProducts) {
-    let cart = []
+    let cart = JSON.parse(window.localStorage.getItem("cart")) || []
 
     // Elementos del DOM
     const productsDOM = document.querySelector(".products__container")
@@ -72,6 +72,7 @@ function cart (db, printProducts) {
         countDOM.innerHTML = showItemsCount()
         subtotalDOM.innerHTML = showSubtotal()
 
+        window.localStorage.setItem("cart", JSON.stringify(cart))
     }
 
     function addToCart(id, qty = 1) {

@@ -1,6 +1,8 @@
 function products (products) {
 
-    const db = [...products]
+    const db = JSON.parse(window.localStorage.getItem("products")) || products
+
+
 
     function printProducts() {
         const productsDOM = document.querySelector(".products__container")
@@ -24,6 +26,7 @@ function products (products) {
         }
 
         productsDOM.innerHTML = htmlProduct
+        window.localStorage.setItem("products", JSON.stringify(db))
     }
 
     printProducts()
