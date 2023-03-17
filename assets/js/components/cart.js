@@ -11,6 +11,7 @@ function cart (db, printProducts) {
 
     const modalCheckout = document.querySelector(".modal__checkout")
     const cartSection = document.querySelector(".cart")
+    const modalStock = document.querySelector(".modal__stock")
     
 
     // Funciones
@@ -150,8 +151,8 @@ function cart (db, printProducts) {
                 const productFound = db.find(p => p.id == item.id)
 
                 if(productFound.quantity < item.qty){
-                    alert(`Lo sentimos. Sólo tenemos ${productFound.quantity} productos disponibles en este estilo. No puedes agregar más veces este articulo.`)
                     removeFromCart(id)
+                    modalStock.classList.add("modal--show")
                 }
             }
         }
@@ -173,8 +174,9 @@ function cart (db, printProducts) {
                 console.log("Producto encontrado: ", productFound)
 
                 if(productFound.quantity < item.qty){
-                    alert(`Lo sentimos. Sólo tenemos ${productFound.quantity} productos disponibles en este estilo. No puedes agregar más veces este articulo.`)
                     removeFromCart(id)
+
+                    modalStock.classList.add("modal--show")
                 }
             }
 

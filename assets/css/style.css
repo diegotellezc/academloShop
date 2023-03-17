@@ -770,6 +770,7 @@ button {
     transition: opacity .6s;
     --transform: translateY(-100vh);
     --transition: transform .8s;
+    z-index: var(--z-modal);
 }
 
 .modal__close__global {
@@ -813,6 +814,31 @@ button {
     --transform: translateY(0);
 }
 
+
+/* Modal Stock */
+.modal__container__stock {
+    margin: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: var(--bg-color);
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal__icon__error {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+
 /* Modal Checkout */
 .modal__container__checkout {
     margin: auto;
@@ -831,7 +857,7 @@ button {
     transition: var(--transition);
 }
 
-.modal__icon {
+.modal__icon__check {
     font-size: 4rem;
     color: var(--green-icon-color);
 }

@@ -11,6 +11,7 @@ import darkMode from "./components/darkMode.js";
 import slider from "./components/slider.js";
 import modalThanks from "./components/modalThanks.js";
 import modalCheckout from "./components/modalCheckout.js";
+import modalStock from "./components/modalStock.js";
 
 // Ocultar loader
 loader()
@@ -41,6 +42,9 @@ modalThanks()
 
 // Modal Checkout
 modalCheckout()
+
+// Modal Stock
+modalStock()
 
 // Modo dark
 darkMode()
