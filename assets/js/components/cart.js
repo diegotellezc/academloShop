@@ -6,6 +6,8 @@ function cart (db, printProducts) {
     const notifyDOM = document.querySelector(".notify")
     const cartBodyDOM = document.querySelector(".cart__body")
     const countDOM = document.querySelector(".cart__count--item")
+    const subtotalDOM = document.querySelector(".cart__subtotal--item")
+    const ivaDOM = document.querySelector(".cart__iva--item")
     const totalDOM = document.querySelector(".cart__total--item")
     const checkoutDOM = document.querySelector(".btn--buy")
 
@@ -68,7 +70,7 @@ function cart (db, printProducts) {
         cartBodyDOM.innerHTML = htmlCart
         notifyDOM.innerHTML = showItemsCount()
         countDOM.innerHTML = showItemsCount()
-        totalDOM.innerHTML = showTotal()
+        subtotalDOM.innerHTML = showSubtotal()
 
     }
 
@@ -112,14 +114,23 @@ function cart (db, printProducts) {
         return suma
     }
 
-    function showTotal() {
-        let total = 0
+    function showSubtotal() {
+        let subtotal = 0
         for(const item of cart) {
             const productFound = db.find(p => p.id === item.id)
-            total += productFound.price * item.qty
+            subtotal += productFound.price * item.qty
         }
 
-        return total
+        let impuesto = 0.19
+        let impuestoCalculado = subtotal * impuesto
+        let impuestoDosDecimales = +impuestoCalculado.toFixed(2)
+        ivaDOM.innerHTML = `$${impuestoDosDecimales}`
+
+        let calculoTotal = impuestoDosDecimales + subtotal
+        let totalConIva = +calculoTotal.toFixed(2)
+
+        totalDOM.innerHTML = `$${totalConIva}`
+        return `$${subtotal}`
     }
 
     function checkout() {
