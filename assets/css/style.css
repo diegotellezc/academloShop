@@ -325,7 +325,7 @@ button {
 .slider {
     display: flex;
     width: 400%;
-    height: 90vh;
+    height: 65vh;
     margin-left: -100%;
 }
 
@@ -407,6 +407,18 @@ button {
 .product__image {
     padding: var(--sp-1);
     background-color: var(--card-color);
+}
+
+.product__image .out--stock {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--primary-color);
+    color: var(--bg-color);
+    padding: 5px 15px;
+    transition: all 200ms ease-out;
+    font-size: var(--tiny-font);
+    opacity: 1;
 }
 
 .product__image img {

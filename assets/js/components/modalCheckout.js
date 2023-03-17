@@ -6,7 +6,6 @@ function modalCheckout () {
 
 
     btnModalCloseCheckout.addEventListener("click", function (e) {
-        console.log("Esta funcionando el evento de click")
         e.preventDefault()
         modalCheckout.classList.remove("modal--show")
     })
