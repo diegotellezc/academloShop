@@ -866,6 +866,7 @@ button {
     grid-auto-columns: 100%;
     transform: var(--transform);
     transition: var(--transition);
+    overflow-y: auto;
 }
 
 .modal__icon__error {
@@ -890,6 +891,7 @@ button {
     grid-auto-columns: 100%;
     transform: var(--transform);
     transition: var(--transition);
+    overflow-y: auto;
 }
 
 .modal__icon__check {
@@ -912,6 +914,7 @@ button {
     grid-auto-columns: 100%;
     transform: var(--transform);
     transition: var(--transition);
+    overflow-y: auto;
 }
 
 .modal__paragraph__m1 {
@@ -934,6 +937,7 @@ button {
     grid-auto-columns: 100%;
     transform: var(--transform);
     transition: var(--transition);
+    overflow-y: auto;
 }
 
 
