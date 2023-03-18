@@ -1,3 +1,4 @@
+import urlChanges from "./helpers/urlChanges.js";
 import loader from "./components/loader.js";
 import showMenu from "./components/showMenu.js";
 import showCart from "./components/showCart.js";
@@ -12,6 +13,9 @@ import slider from "./components/slider.js";
 import modalThanks from "./components/modalThanks.js";
 import modalCheckout from "./components/modalCheckout.js";
 import modalStock from "./components/modalStock.js";
+
+// Cambio de url de imagenes
+urlChanges()
 
 // Ocultar loader
 loader()

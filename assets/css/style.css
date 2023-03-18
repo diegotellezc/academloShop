@@ -339,7 +339,7 @@ button {
 .slider {
     display: flex;
     width: 400%;
-    height: 8vh;
+    height: 29vh;
     margin-left: -100%;
 }
 
@@ -1040,15 +1040,22 @@ button {
 
 
 /* Media Queries */
-@media (min-width: 380px){
+
+@media (min-width: 500px){
     .slider {
-        height: 11vh;
+        height: 35vh;
     }
 }
 
-@media (min-width: 560px){
+@media (min-width: 600px){
     .slider {
-        height: 13vh;
+        height: 38vh;
+    }
+}
+
+@media (min-width: 700px){
+    .slider {
+        height: 46vh;
     }
 }
 
@@ -1089,6 +1096,7 @@ button {
     .slider__section {
     width: 25%;
     }
+
 
     .modal__title {
         font-size: 2.5rem;
